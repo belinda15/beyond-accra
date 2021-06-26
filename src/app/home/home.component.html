@@ -1,0 +1,132 @@
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div class="home-main">
+    <div fxLayout="row" class="header">
+      <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+        <p (click)="viewMenuDisplay()">
+          <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+        </p>
+        <div class="menu-div" (click)="viewMenuDisplay()">
+          <p (click)="viewMenuDisplay()">MENU</p>
+        </div>
+
+      </div>
+
+      <div fxFlex="10">
+        <img src="./assets/images/main-logo.png" class="header-logo">
+      </div>
+
+      <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+        <div class="menu-div border-left">
+          <p routerLink="/accommodation">ACCOMMODATION</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-container">
+      <mat-icon class="message-ic" svgIcon="message"></mat-icon>
+    </div>
+
+    <div class="bottom-brand">
+      BEYOND ACCRA
+      <p>
+        <mat-icon svgIcon="more" class="more-ic"></mat-icon>
+      </p>
+    </div>
+
+    <div class="commitment-div">
+      <span>OUR COMMITMENTS</span>
+    </div>
+  </div>
+
+  <div class="acc-home">
+    <div fxLayout="row" class="acc-main">
+      <div fxFlex="70">
+        <mat-icon svgIcon="arrow-left" class="left-ic-img"></mat-icon>
+        <mat-icon svgIcon="arrow-right" class="right-ic-img"></mat-icon>
+        <img src="./assets/images/acc-home.png" class="acc-main-img">
+      </div>
+      <div fxFlex="30" class="acc-text-div">
+        <p class="text-1">ACCOMMODATION</p>
+        <p class="text-2">SUPERIOR</p>
+        <p  class="text-3">ELEGANCE AND COMFORT</p>
+        <p  class="text-4">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incid
+          idunt ut labore et dolore magna aliqua.
+          Adipiscing.</p>
+        <p  class="text-5">
+          SEE ROOM
+          <mat-icon svgIcon="right" class="right-ic"></mat-icon>
+        </p>
+
+        <button class="book-btn">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="acc-suites">
+      <p class="options" *ngFor = "let opts of accomadtionOptions; let i = index" [ngClass]="{'active': selectedAccomodation === i}" >{{opts}}</p>
+    </div>
+  </div>
+
+  <div class="gallery-home">
+    <img class="main-img" src="assets/images/gal-home.png">
+    <div class="caption">
+      <span class="text">VIEW GALLERY <mat-icon svgIcon="right" class="right-ic"></mat-icon></span>
+    </div>
+  </div>
+
+
+  <div class="acc-home">
+    <div fxLayout="row" class="acc-main">
+      <div fxFlex="30" class="acc-text-div">
+        <p class="text-1">NIGHT LIFE</p>
+        <p class="text-2">CARBON</p>
+        <p  class="text-3">YOLO EXPERIENCE</p>
+        <p  class="text-4">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incid
+          idunt ut labore et dolore magna aliqua.
+          Adipiscing.</p>
+
+      </div>
+      <div fxFlex="70">
+        <mat-icon svgIcon="arrow-left" class="left-ic-img"></mat-icon>
+        <mat-icon svgIcon="arrow-right" class="right-ic-img"></mat-icon>
+        <img src="./assets/images/night-home.png" class="acc-main-img">
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="acc-suites">
+          <p class="options" *ngFor = "let opts of nightLifeOptions; let i = index" [ngClass]="{'active': selectedNightLife === i}" >{{opts}}</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="blogs-home">
+
+    <p class="main-title">BLOGS</p>
+    <div fxLayout="row">
+      <div fxFlex="33" class="blog-sec">
+        <img src="./assets/images/blog-thumb-one.png">
+        <p class="title">Blog tile</p>
+        <p class="date">dd/mm/yyyy</p>
+      </div>
+
+      <div fxFlex="33" class="blog-sec">
+        <img src="./assets/images/blog-thumb-two.png">
+        <p class="title">Blog tile</p>
+        <p class="date">dd/mm/yyyy</p>
+      </div>
+      <div fxFlex="33" class="blog-sec">
+        <img src="./assets/images/blog-thumb-three.png">
+        <p class="title">Blog tile</p>
+        <p class="date">dd/mm/yyyy</p>
+      </div>
+
+    </div>
+
+  </div>
+  <app-footer></app-footer>
+</div>
+

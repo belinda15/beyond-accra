@@ -1,0 +1,267 @@
+.home-main{
+      display: block;
+      background: url('/assets/images/home-bg.png');
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+}
+
+.header-left{
+  border-bottom: 1px solid #ffffff;
+  padding-left: 3%;
+}
+
+.header-right{
+  border-bottom: 1px solid #ffffff;
+  padding-right: 3%;
+}
+
+.header-logo{
+  display: block;
+  margin: 2% auto -50%;
+  width: 100%;
+}
+
+.icon-menu{
+  margin-top: -4px !important;
+  cursor: pointer;
+}
+
+.menu-div{
+  display: flex;
+  row-gap: 2%;
+  flex-direction: row;
+  color: #ffffff;
+  font-family: Gotham-Medium, serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.border-left{
+  border-left: 1px solid #ffffff;
+  padding-left: 3%;
+}
+
+.message-container{
+  position: absolute;
+  top: 85%;
+  left: 3%;
+}
+
+.message-ic, .more-ic{
+  font-size: 35px !important;
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.bottom-brand{
+  position: absolute;
+  width: 20%;
+  left: 40%;
+  top: 85%;
+  color: #ffffff;
+  font-family: Gotham-Medium, serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.commitment-div{
+  color: #ffffff;
+  font-family: Gotham-Medium, serif;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 94.2%;
+  height: 4.5%;
+  min-height: 4.5%;
+  max-height: 4.5%;
+  padding-top: 0.8%;
+  background: rgba(25, 25, 25, .5);
+
+  span{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.acc-home{
+
+  .acc-suites{
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: Avenir-Medium, serif;
+    font-size: 20px;
+  }
+
+  .options{
+    cursor: pointer;
+  }
+
+  .active{
+    font-family: Avenir-Medium, serif;
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+
+  .acc-main{
+    padding: 3%;
+    height: 80vh;
+  }
+
+  .acc-main-img{
+    width: 100%;
+    height: -webkit-fill-available;
+  }
+
+  .acc-text-div{
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-top: 1%;
+
+    .text-1{
+      color: #616161;
+      font-family: Avenir-Medium, serif;
+      font-size: 20px;
+    }
+
+    .text-2{
+      color: #000000;
+      font-family: Georgia, serif;
+      font-size: 70px;
+    }
+
+    .text-3{
+      color: #616161;
+      font-family: Avenir-Medium, serif;
+      font-size: 28px;
+      margin-top: -12%;
+      margin-bottom: 10%;
+    }
+
+    .text-4{
+      color: #616161;
+      font-family: Avenir-Medium, serif;
+      font-size: 22px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .text-5{
+      color: #616161;
+      font-family: Avenir-Medium, serif;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .right-ic{
+      vertical-align: bottom
+    }
+  }
+}
+
+.book-btn{
+  border: 2px solid #616161;
+  background: transparent;
+  color: #616161;
+  font-family: Avenir-Medium, serif;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px 15px;
+  margin-top: 5%;
+}
+
+.left-ic-img{
+  position: relative;
+  top: 50%;
+  left: -1%;
+  font-size: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer;
+}
+
+
+.right-ic-img{
+  position: relative;
+  top: 50%;
+  left: 96.5%;
+  font-size: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer;
+}
+
+.blogs-home{
+  background: #f0f0f0;
+  padding: 2.5% 5%;
+  margin-top: 5%;
+
+  .blog-sec{
+
+    img{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .title{
+      text-align: center;
+      font-family: Avenir-Heavy, serif;
+      font-size: 23px;
+      text-transform: uppercase;
+    }
+
+    .date{
+      font-family: Avenir-Medium, serif;
+      color: #c6c2c2;
+      font-size: 20px;
+      text-align: center;
+      line-height: 0px;
+    }
+
+  }
+
+  .main-title{
+    font-family: Georgia, serif;
+    font-size: 56px;
+    text-align: center;
+    color: #000000;
+    line-height: 0px;
+  }
+}
+
+
+.gallery-home{
+  background: #f0f0f0;
+  padding-top: 4%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+
+  .right-ic{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .main-img{
+    width: 100%;
+  }
+
+  .caption{
+    position: relative;
+    top: 96%;
+    text-align: center;
+    font-family: Avenir-Medium, serif;
+    color: #000000;
+    font-size: 26px;
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+
+    .text{
+      cursor: pointer;
+    }
+  }
+}

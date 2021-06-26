@@ -1,0 +1,116 @@
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div class="acc-main" fxLayout="column">
+    <div fxLayout="row" class="header">
+      <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+        <p (click)="viewMenuDisplay()">
+          <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+        </p>
+        <div class="menu-div" (click)="viewMenuDisplay()">
+          <p (click)="viewMenuDisplay()">MENU</p>
+        </div>
+
+      </div>
+
+      <div fxFlex="10">
+        <img src="./assets/images/main-logo.png" class="header-logo">
+      </div>
+
+      <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+        <div class="menu-div border-left">
+          <p routerLink="/accommodation">ACCOMMODATION</p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p class="acc-tile">ACCOMMODATION</p>
+      <div class="dataacc" fxLayout="row" >
+        <input type="text"  placeholder="No. of rooms"/>
+        <input type="text" ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Dates"/>
+        <input type="text"  placeholder="No. of adults"/>
+        <input type="text"  placeholder="No. of children"/>
+        <span class="search-txt">SEARCH</span>
+      </div>
+
+
+    </div>
+    <div class="suites-container">
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="acc-suites">
+        <p class="options" *ngFor = "let opts of accomadtionOptions; let i = index" [ngClass]="{'active': selectedAccomodation === i}" >{{opts}}</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="section">
+    <div class="acc-tile-one" fxLayout="row">
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+      <div fxFlex="30">
+        <div class="acc-details">
+          <p class="title">Venue Name</p>
+          <div class="section">
+            <p class="optionss">Quantity of rooms: 22</p>
+            <p class="optionss">Guests: 2</p>
+            <p class="optionss">Average area: 37 m</p>
+          </div>
+          <p class="more">GET  MORE INFO—</p>
+          <p class="price">$300</p>
+          <p class="night">PER NIGHT</p>
+          <button class="btn">BOOK ROOM</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="acc-tile-one" fxLayout="row">
+
+      <div fxFlex="30">
+        <div class="acc-details-two">
+          <p class="title">Venue Name</p>
+          <div class="section">
+            <p class="optionss">Quantity of rooms: 22</p>
+            <p class="optionss">Guests: 2</p>
+            <p class="optionss">Average area: 37 m</p>
+          </div>
+          <p class="more">GET  MORE INFO—</p>
+          <p class="price">$300</p>
+          <p class="night">PER NIGHT</p>
+          <button class="btn">BOOK ROOM</button>
+        </div>
+      </div>
+
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="acc-tile-one" fxLayout="row">
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
+      <div fxFlex="30">
+        <div class="acc-details">
+          <p class="title">Venue Name</p>
+          <div class="section">
+            <p class="optionss">Quantity of rooms: 22</p>
+            <p class="optionss">Guests: 2</p>
+            <p class="optionss">Average area: 37 m</p>
+          </div>
+          <p class="more">GET  MORE INFO—</p>
+          <p class="price">$300</p>
+          <p class="night">PER NIGHT</p>
+          <button class="btn">BOOK ROOM</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="load-container">
+    <button class="load-btn">LOAD MORE</button>
+  </div>
+
+  <div class="space"></div>
+  <app-footer></app-footer>
+
+</div>

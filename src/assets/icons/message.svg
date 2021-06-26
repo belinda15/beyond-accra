@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="Group_4" data-name="Group 4" transform="translate(-94.039 -946.039)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(94.039 946.039)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="27.5" cy="27.5" r="27.5" stroke="none"/>
+      <circle cx="27.5" cy="27.5" r="26.5" fill="none"/>
+    </g>
+    <g id="mail_2_" data-name="mail (2)" transform="translate(104.094 962.333)">
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_1" data-name="Path 1" d="M32.3,85.333H1.746A1.751,1.751,0,0,0,0,87.079v19.2a1.751,1.751,0,0,0,1.746,1.746H32.3a1.751,1.751,0,0,0,1.746-1.746v-19.2A1.751,1.751,0,0,0,32.3,85.333Zm-.655,1.309L18.026,96.855a1.825,1.825,0,0,1-2.009,0L2.4,86.642ZM24.369,97.529l7.42,9.166c.007.009.017.016.024.024H2.23c.008-.009.017-.015.024-.024l7.42-9.166a.655.655,0,0,0-1.018-.824l-7.347,9.076V87.461L15.232,97.9a3.125,3.125,0,0,0,3.579,0L32.734,87.461v18.321l-7.347-9.076a.655.655,0,0,0-1.018.824Z" transform="translate(0 -85.333)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

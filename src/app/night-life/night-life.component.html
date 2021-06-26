@@ -1,0 +1,121 @@
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div class="night-main" fxLayout="column">
+    <div fxLayout="row" class="header">
+
+      <div class="message-container">
+        <mat-icon class="message-ic" svgIcon="message"></mat-icon>
+      </div>
+
+      <div class="bottom-brand">
+        BEYOND ACCRA
+        <p>
+          <mat-icon svgIcon="more" class="more-ic"></mat-icon>
+        </p>
+      </div>
+
+      <div class="commitment-div">
+        <span>DISCOVER THE NIGHT LIFE</span>
+      </div>
+
+      <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+        <p (click)="viewMenuDisplay()">
+          <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+        </p>
+        <div class="menu-div" (click)="viewMenuDisplay()">
+          <p (click)="viewMenuDisplay()">MENU</p>
+        </div>
+
+      </div>
+
+      <div fxFlex="10">
+        <img src="./assets/images/main-logo.png" class="header-logo">
+      </div>
+
+      <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+        <div class="menu-div border-left">
+          <p routerLink="/accommodation">ACCOMMODATION</p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p class="acc-tile">NIGHT LIFE</p>
+      <p class="night-desc">{{text}}</p>
+
+
+    </div>
+
+
+  </div>
+  <div class="section">
+    <div class="night-tile"  fxLayout="row">
+      <div fxFlex="30" class="deatils" fxLayout="column">
+        <span class="number">01</span>
+        <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
+          <p class="title">Garage</p>
+          <p class="title">Bar & Lounge</p>
+          <p class="sub-one">Brief Venue Description </p>
+          <p class="sub-two">{{textOne}}</p>
+        </div>
+      </div>
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+
+
+    </div>
+  </div>
+  <div class="section">
+    <div class="night-tile"  fxLayout="row">
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
+      <div fxFlex="30" class="deatils" fxLayout="column">
+        <span class="number">02</span>
+        <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
+          <p class="title">Front / Back</p>
+          <p class="sub-one">Brief Venue Description </p>
+          <p class="sub-two">{{textOne}}</p>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="section">
+    <div class="night-tile"  fxLayout="row">
+      <div fxFlex="30" class="deatils" fxLayout="column">
+        <span class="number">03</span>
+        <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
+          <p class="title">Luna</p>
+          <p class="title">Rooftop</p>
+          <p class="sub-one">Brief Venue Description </p>
+          <p class="sub-two">{{textOne}}</p>
+        </div>
+      </div>
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
+
+
+    </div>
+  </div>
+  <div class="load-container">
+    <button class="load-btn">LOAD MORE</button>
+  </div>
+
+  <div class="space"></div>
+  <div class="night-sub" fxLayout="row">
+    <div fxFlex="50" fxLayout="column" class="image-settings book" [ngStyle]="{'background-image': 'url(' + bgFour + ')'}">
+      <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
+        <p class="text-one">Book a</p>
+        <p class="text-two">Hotel</p>
+        <p  class="text-three">get more Information —</p>
+      </div>
+    </div>
+    <div fxFlex="50" class="image-settings book" [ngStyle]="{'background-image': 'url(' + bgFive + ')'}">
+      <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
+        <p class="text-one">Book a</p>
+        <p class="text-two">Resort</p>
+        <p  class="text-three">get more Information —</p>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <app-footer></app-footer>
+</div>
