@@ -1,0 +1,112 @@
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div fxLayout="row" class="header">
+    <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+      <p (click)="viewMenuDisplay()">
+        <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+      </p>
+      <div class="menu-div" (click)="viewMenuDisplay()">
+        <p (click)="viewMenuDisplay()">MENU</p>
+      </div>
+
+    </div>
+
+    <div fxFlex="10">
+      <img src="./assets/images/logo-gold.png" class="header-logo">
+    </div>
+
+    <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+      <div class="menu-div border-left">
+        <p routerLink="/accommodation">ACCOMMODATION</p>
+      </div>
+    </div>
+  </div>
+  <div class="main-container">
+    <p class="blog-date">DD/MM/YY</p>
+  </div>
+  <div class="title-container">
+    <span>Tile of Blog</span>
+  </div>
+
+  <div class="main-container">
+    <p class="blog-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor augue mauris augue. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Ut eu sem integer vitae.
+    </p>
+
+    <p class="blog-text">
+      Tempor orci eu lobortis elementum nibh tellus. Sit amet facilisis magna etiam. Arcu cursus euismod quis viverra nibh cras pulvinar. Nec feugiat in fermentum posuere urna. Blandit turpis cursus in hac. In nibh mauris cursus mattis molestie
+    </p>
+    <p class="blog-text">
+      . Mollis aliquam ut porttitor leo a diam. Laoreet id donec ultrices tincidunt arcu non. Nisl vel pretium lectus quam id leo. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Feugiat nisl pretium fusce id. Leo vel fringilla est ullamcorper. Ac odio tempor orci dapibus ultrices in iaculis nunc sed.
+    </p>
+
+    <div class="section">
+      <div class="image-settings blog-image" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+    </div>
+
+    <p class="blog-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor augue mauris augue. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Ut eu sem integer vitae.
+    </p>
+
+    <p class="blog-text">
+      Tempor orci eu lobortis elementum nibh tellus. Sit amet facilisis magna etiam. Arcu cursus euismod quis viverra nibh cras pulvinar. Nec feugiat in fermentum posuere urna. Blandit turpis cursus in hac. In nibh mauris cursus mattis molestie
+    </p>
+    <p class="blog-text">
+      . Mollis aliquam ut porttitor leo a diam. Laoreet id donec ultrices tincidunt arcu non. Nisl vel pretium lectus quam id leo. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Feugiat nisl pretium fusce id. Leo vel fringilla est ullamcorper. Ac odio tempor orci dapibus ultrices in iaculis nunc sed.
+    </p>
+
+    <div class="section">
+      <div class="image-settings blog-image" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+    </div>
+
+    <p class="blog-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor augue mauris augue. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Ut eu sem integer vitae.
+    </p>
+
+    <p class="blog-text">
+      Tempor orci eu lobortis elementum nibh tellus. Sit amet facilisis magna etiam. Arcu cursus euismod quis viverra nibh cras pulvinar. Nec feugiat in fermentum posuere urna. Blandit turpis cursus in hac. In nibh mauris cursus mattis molestie
+    </p>
+    <p class="blog-text">
+      . Mollis aliquam ut porttitor leo a diam. Laoreet id donec ultrices tincidunt arcu non. Nisl vel pretium lectus quam id leo. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Feugiat nisl pretium fusce id. Leo vel fringilla est ullamcorper. Ac odio tempor orci dapibus ultrices in iaculis nunc sed.
+    </p>
+
+    <div class="section">
+      <div class="image-settings blog-image" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+    </div>
+
+    <p class="blog-athor">By Nii Mag, Beyond Accra</p>
+    <p class="related">Related Posts</p>
+
+    <div class="blogs-home">
+      <div fxLayout="row">
+        <div fxFlex="33" class="blog-sec">
+          <img src="./assets/images/blog-thumb-one.png">
+          <p class="title">Blog tile</p>
+          <p class="date">dd/mm/yyyy</p>
+        </div>
+
+        <div fxFlex="33" class="blog-sec">
+          <img src="./assets/images/blog-thumb-two.png">
+          <p class="title">Blog tile</p>
+          <p class="date">dd/mm/yyyy</p>
+        </div>
+        <div fxFlex="33" class="blog-sec">
+          <img src="./assets/images/blog-thumb-three.png">
+          <p class="title">Blog tile</p>
+          <p class="date">dd/mm/yyyy</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="space">
+      <div class="back-div" routerLink="/blog">
+        <mat-icon class="ic" svgIcon="arrow" style="color: #ffffff;"></mat-icon>
+        <span>Back to main blog</span>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>

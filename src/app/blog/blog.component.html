@@ -1,1 +1,71 @@
-<p>blog works!</p>
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div fxLayout="row" class="header">
+    <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+      <p (click)="viewMenuDisplay()">
+        <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+      </p>
+      <div class="menu-div" (click)="viewMenuDisplay()">
+        <p (click)="viewMenuDisplay()">MENU</p>
+      </div>
+
+    </div>
+
+    <div fxFlex="10">
+      <img src="./assets/images/logo-gold.png" class="header-logo">
+    </div>
+
+    <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+      <div class="menu-div border-left">
+        <p routerLink="/accommodation">ACCOMMODATION</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="section">
+      <div class="blog-tile"  fxLayout="row">
+        <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
+          <p class="blog-date">DD/MM/YY</p>
+          <p class="blog-title">BLOG TITLE Lorem ipsum
+            dolor sit amet,</p>
+          <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
+          <button routerLink="/blog-details/1" class="btn">Load more</button>
+        </div>
+        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="blog-tile"  fxLayout="row">
+        <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
+          <p class="blog-date">DD/MM/YY</p>
+          <p class="blog-title">BLOG TITLE Lorem ipsum
+            dolor sit amet,</p>
+          <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
+          <button routerLink="/blog-details/1" class="btn">Load more</button>
+        </div>
+        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="blog-tile"  fxLayout="row">
+        <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
+          <p class="blog-date">DD/MM/YY</p>
+          <p class="blog-title">BLOG TITLE Lorem ipsum
+            dolor sit amet,</p>
+          <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
+          <button routerLink="/blog-details/1" class="btn">Load more</button>
+        </div>
+        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-container">
+    <div class="space"></div>
+    <app-footer></app-footer>
+  </div>
+
+</div>

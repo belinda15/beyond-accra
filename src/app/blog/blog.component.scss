@@ -1,0 +1,107 @@
+.header-left{
+  border-bottom: 1px solid #8c8d91;
+  padding-left: 3%;
+}
+
+.header-right{
+  border-bottom: 1px solid #8c8d91;
+  padding-right: 3%;
+}
+
+.header-logo{
+  display: block;
+  margin: 2% auto -50%;
+  width: 100%;
+}
+
+.icon-menu{
+  margin-top: -4px !important;
+  cursor: pointer;
+}
+
+.menu-div{
+  display: flex;
+  row-gap: 2%;
+  flex-direction: row;
+  color: #8c8d91;
+  font-family: Gotham-Medium, serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.border-left{
+  border-left: 1px solid #8c8d91;
+  padding-left: 3%;
+}
+
+.section{
+  padding-top: 3%;
+  overflow-x: hidden !important;
+}
+
+.blog-tile{
+  height: 80vh;
+  padding: 1% 2% 5%;
+  border-bottom: 1px solid #616161;
+}
+
+.main-container{
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.deatils {
+  height: -webkit-fill-available;
+  padding: 1%;
+}
+
+
+.image-settings{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-date{
+  color: #a9a8aa;
+  font-family: Avenir-Book, serif;
+  font-size: 18px;
+  margin-bottom: -4px;
+}
+
+.blog-title{
+  color: #000000;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  width: 80%;
+
+}
+
+.blog-details{
+  font-family: Avenir-Book, serif;
+  width: 90%;
+  font-size: 17px;
+}
+
+.btn{
+  width: 80%;
+  background: transparent;
+  font-family: Avenir-Medium, serif;
+  color: #000000;
+  border: 4px solid #cbbb9f;
+  font-size: 20px;
+  padding: 3%;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.space{
+  height: 50px;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.footer-container{
+  margin-top: 3%;
+}

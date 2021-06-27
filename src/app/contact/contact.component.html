@@ -1,0 +1,84 @@
+<app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
+<div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div class="acc-main" fxLayout="column">
+    <div fxLayout="row" class="header">
+      <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
+        <p (click)="viewMenuDisplay()">
+          <mat-icon class="icon-menu" svgIcon="menu"></mat-icon>
+        </p>
+        <div class="menu-div" (click)="viewMenuDisplay()">
+          <p (click)="viewMenuDisplay()">MENU</p>
+        </div>
+
+      </div>
+
+      <div fxFlex="10">
+        <img src="./assets/images/main-logo.png" class="header-logo">
+      </div>
+
+      <div fxFlex="45" class="header-right " fxLayoutAlign="end center" >
+        <div class="menu-div border-left">
+          <p routerLink="/accommodation">ACCOMMODATION</p>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <p class="acc-tile">CONTACT</p>
+    </div>
+  </div>
+  <div class="main-container">
+    <div fxLayout="row">
+      <div fxFlex="50" fxLayout="column">
+        <p class="label">First Name</p>
+        <input class="input" type="text" placeholder="first name">
+      </div>
+      <div fxFlex="50">
+        <p class="label">Last Name</p>
+        <input class="input" type="text" placeholder="last name">
+      </div>
+    </div>
+    <div fxLayout="row" class="second-row">
+      <div fxFlex="50" fxLayout="column">
+        <p class="label">Phone Number</p>
+        <input class="input" type="text" placeholder="+233 000 000 0000">
+      </div>
+      <div fxFlex="50">
+        <p class="label">E-mail</p>
+        <input class="input" type="text" placeholder="your e-mail">
+      </div>
+    </div>
+
+    <div fxLayout="row" class="second-row">
+      <div fxFlex="100" fxLayout="column">
+        <p class="label">Message</p>
+        <input class="inputs" type="text" placeholder="Enter Message here">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="load-container">
+    <button class="load-btn">SEND MESSAGE</button>
+  </div>
+
+  <div class="space"></div>
+  <div class="con" fxLayoutAlign="center center" >
+    <span class="address-data"> Amalfi Coast, SA, GHANA</span>
+  </div>
+  <div class="con" fxLayoutAlign="center center" >
+    <span class="address-data"> +233 24 688 8087</span>
+  </div>
+  <div class="con" fxLayoutAlign="center center" >
+    <span class="address-data"> info@beyondaccra.com</span>
+  </div>
+  <div  fxLayout="row" class="con" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <mat-icon svgIcon="fb"></mat-icon>
+    <mat-icon svgIcon="ig"></mat-icon>
+    <mat-icon svgIcon="twitter"></mat-icon>
+  </div>
+
+  <div class="copyrights">
+    © BEYOND ACCRA 2021 | all rights reserved
+  </div>
+
+</div>

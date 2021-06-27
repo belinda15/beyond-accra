@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {animate, style, transition, trigger} from '@angular/animations';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
-import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss'],
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss'],
   animations: [
     trigger('fadeIn', [
       transition(
@@ -30,18 +30,27 @@ import {animate, style, transition, trigger} from '@angular/animations';
     ])
   ]
 })
-export class BlogComponent implements OnInit {
-  viewMenu = false;
+export class ContactComponent implements OnInit {
 
-  bgOne = './assets/images/blog-one.png';
-  bgTwo = './assets/images/blog-two.png';
-  bgThree = './assets/images/gal-home.png';
+  viewMenu = false;
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
 
 
     iconRegistry.addSvgIcon(
       'menu',
-      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic.svg'));
+
+    iconRegistry.addSvgIcon(
+      'fb',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/fb.svg'));
+
+    iconRegistry.addSvgIcon(
+      'twitter',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/twitter.svg'));
+
+    iconRegistry.addSvgIcon(
+      'ig',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/ig.svg'));
   }
 
   ngOnInit(): void {
@@ -53,6 +62,5 @@ export class BlogComponent implements OnInit {
   closeMenu(event): void{
     this.viewMenu = event;
   }
-
 
 }

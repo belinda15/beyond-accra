@@ -15,6 +15,8 @@ import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 import { FormsModule } from '@angular/forms';
 import { NightLifeComponent } from './night-life/night-life.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BlogComponent } from './blog/blog.component';
     MenuComponent,
     AccomodationComponent,
     NightLifeComponent,
-    BlogComponent
+    BlogComponent,
+    BlogDetailsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

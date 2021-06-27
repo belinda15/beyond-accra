@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import {animate, style, transition, trigger} from '@angular/animations';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
-import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss'],
+  selector: 'app-blog-details',
+  templateUrl: './blog-details.component.html',
+  styleUrls: ['./blog-details.component.scss'],
   animations: [
     trigger('fadeIn', [
       transition(
@@ -30,18 +30,21 @@ import {animate, style, transition, trigger} from '@angular/animations';
     ])
   ]
 })
-export class BlogComponent implements OnInit {
+export class BlogDetailsComponent implements OnInit {
   viewMenu = false;
 
-  bgOne = './assets/images/blog-one.png';
-  bgTwo = './assets/images/blog-two.png';
-  bgThree = './assets/images/gal-home.png';
+  bgOne = './assets/images/blog-details.png';
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
 
 
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
+
+    iconRegistry.addSvgIcon(
+      'arrow',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/arrow.svg'));
   }
 
   ngOnInit(): void {
