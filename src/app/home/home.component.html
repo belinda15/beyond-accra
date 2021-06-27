@@ -41,10 +41,9 @@
 
   <div class="acc-home">
     <div fxLayout="row" class="acc-main">
-      <div fxFlex="70">
+      <div fxFlex="70"  class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}">
         <mat-icon svgIcon="arrow-left" class="left-ic-img"></mat-icon>
         <mat-icon svgIcon="arrow-right" class="right-ic-img"></mat-icon>
-        <img src="./assets/images/acc-home.png" class="acc-main-img">
       </div>
       <div fxFlex="30" class="acc-text-div">
         <p class="text-1">ACCOMMODATION</p>
@@ -89,13 +88,14 @@
           Adipiscing.</p>
 
       </div>
-      <div fxFlex="70">
+      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}">
         <mat-icon svgIcon="arrow-left" class="left-ic-img"></mat-icon>
         <mat-icon svgIcon="arrow-right" class="right-ic-img"></mat-icon>
-        <img src="./assets/images/night-home.png" class="acc-main-img">
 
-        <div fxLayout="row" fxLayoutAlign="space-between center" class="acc-suites">
-          <p class="options" *ngFor = "let opts of nightLifeOptions; let i = index" [ngClass]="{'active': selectedNightLife === i}" >{{opts}}</p>
+        <div class="textss-night">
+          <div fxLayout="row" fxLayoutAlign="space-between center" class="acc-suites">
+            <p class="options" *ngFor = "let opts of nightLifeOptions; let i = index" [ngClass]="{'active': selectedNightLife === i}" >{{opts}}</p>
+          </div>
         </div>
       </div>
 

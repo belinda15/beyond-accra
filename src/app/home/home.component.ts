@@ -42,6 +42,9 @@ export class HomeComponent implements OnInit {
     'CLUBS', 'RESTAURANTS', 'BARS', 'ROOFTOPS'
   ];
 
+  bgOne = './assets/images/acc-home.png';
+  bgTwo = './assets/images/night-home.png';
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
 
     iconRegistry.addSvgIcon(
