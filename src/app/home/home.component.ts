@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material/icon';
 import {animate, style, transition, trigger} from '@angular/animations';
@@ -45,7 +45,15 @@ export class HomeComponent implements OnInit {
   bgOne = './assets/images/acc-home.png';
   bgTwo = './assets/images/night-home.png';
 
+  tileOne = './assets/images/new-tile-one.jpg';
+  tileTwo = './assets/images/new-tile-two.jpg';
+  tileThree = './assets/images/new-tile-three.jpeg';
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+
+    iconRegistry.addSvgIcon(
+      'menu-alt',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
 
     iconRegistry.addSvgIcon(
       'menu',
@@ -71,6 +79,10 @@ export class HomeComponent implements OnInit {
       'arrow-right',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/home-arrow-right.svg'));
 
+    iconRegistry.addSvgIcon(
+      'rating',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/rating.svg'));
+
 
 
 
@@ -79,6 +91,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   viewMenuDisplay(): void {
@@ -87,5 +100,7 @@ export class HomeComponent implements OnInit {
   closeMenu(event): void{
     this.viewMenu = event;
   }
+
+
 
 }

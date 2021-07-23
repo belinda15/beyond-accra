@@ -1,0 +1,37 @@
+.header-main{
+  background-color: rgba(3, 3, 3, 0.35);;
+  padding: 1%;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 10;
+
+  .logo{
+    width: 60px;
+  }
+}
+
+.navbar-inverse{
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.header-options{
+
+  span{
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 17px;
+  }
+
+  button{
+    border: none;
+    background: #ffffff;
+    color: #000e2f;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}

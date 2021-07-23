@@ -40,6 +40,9 @@ export class AccomodationComponent implements OnInit {
   selected: {startDate: '', endDate: ''};
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
 
+    iconRegistry.addSvgIcon(
+      'menu-alt',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
 
     iconRegistry.addSvgIcon(
       'menu',

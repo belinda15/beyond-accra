@@ -43,6 +43,11 @@
   height: 80vh;
   padding: 1% 2% 5%;
   border-bottom: 1px solid #616161;
+
+  @media screen and (max-width: 600px) {
+    border-bottom: unset;
+    height: unset;
+  }
 }
 
 .main-container{
@@ -54,6 +59,10 @@
 .deatils {
   height: -webkit-fill-available;
   padding: 1%;
+  @media screen and (max-width: 600px) {
+    border-bottom: 1px solid #616161;
+    padding-bottom: 10%;
+  }
 }
 
 
@@ -76,6 +85,10 @@
   font-size: 40px;
   width: 80%;
 
+  @media screen and (max-width: 600px) {
+    font-size: 35px;
+  }
+
 }
 
 .blog-details{
@@ -94,6 +107,12 @@
   padding: 3%;
   cursor: pointer;
   margin-top: 3%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+    width: 50%;
+    border: 3px solid #cbbb9f;
+  }
 }
 
 .space{

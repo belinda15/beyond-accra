@@ -15,6 +15,18 @@ export class MenuComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'close',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/close.svg'));
+
+    iconRegistry.addSvgIcon(
+      'fb',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/fb.svg'));
+
+    iconRegistry.addSvgIcon(
+      'twitter',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/twitter.svg'));
+
+    iconRegistry.addSvgIcon(
+      'ig',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/ig.svg'));
   }
 
   ngOnInit(): void {

@@ -40,6 +40,10 @@ export class BlogComponent implements OnInit {
 
 
     iconRegistry.addSvgIcon(
+      'menu-alt',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
+
+    iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
   }

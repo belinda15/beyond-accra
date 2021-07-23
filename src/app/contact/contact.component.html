@@ -1,6 +1,10 @@
 <app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
 <div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
   <div class="acc-main" fxLayout="column">
+    <div class="header-mobile mobile" fxLayout="row" >
+      <img src="./assets/images/logo-gold.png" class="header-logo-mobile">
+      <mat-icon  (click)="viewMenuDisplay()" class="header-ic-mobile" svgIcon="menu-alt"></mat-icon>
+    </div>
     <div fxLayout="row" class="header">
       <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
         <p (click)="viewMenuDisplay()">
@@ -27,7 +31,7 @@
     </div>
   </div>
   <div class="main-container">
-    <div fxLayout="row">
+    <div fxLayout="row" fxLayout.xs="column">
       <div fxFlex="50" fxLayout="column">
         <p class="label">First Name</p>
         <input class="input" type="text" placeholder="first name">
@@ -37,7 +41,7 @@
         <input class="input" type="text" placeholder="last name">
       </div>
     </div>
-    <div fxLayout="row" class="second-row">
+    <div fxLayout="row" class="second-row" fxLayout.xs="column">
       <div fxFlex="50" fxLayout="column">
         <p class="label">Phone Number</p>
         <input class="input" type="text" placeholder="+233 000 000 0000">

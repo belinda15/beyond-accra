@@ -51,6 +51,10 @@ export class ContactComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'ig',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/ig.svg'));
+
+    iconRegistry.addSvgIcon(
+      'menu-alt',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
   }
 
   ngOnInit(): void {

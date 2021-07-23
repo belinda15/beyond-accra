@@ -1,5 +1,9 @@
 <app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
 <div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+  <div class="header-mobile mobile" fxLayout="row" >
+    <img src="./assets/images/logo-gold.png" class="header-logo-mobile">
+    <mat-icon  (click)="viewMenuDisplay()" class="header-ic-mobile mobile" svgIcon="menu-alt"></mat-icon>
+  </div>
   <div fxLayout="row" class="header">
     <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
       <p (click)="viewMenuDisplay()">
@@ -24,7 +28,8 @@
 
   <div class="main-container">
     <div class="section">
-      <div class="blog-tile"  fxLayout="row">
+      <div class="blog-tile"  fxLayout="row" fxLayout.xs="column">
+        <img class="mobile" [src]="bgOne" style="width: 100%;">
         <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
           <p class="blog-date">DD/MM/YY</p>
           <p class="blog-title">BLOG TITLE Lorem ipsum
@@ -32,12 +37,13 @@
           <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
           <button routerLink="/blog-details/1" class="btn">Load more</button>
         </div>
-        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+        <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
       </div>
     </div>
 
     <div class="section">
-      <div class="blog-tile"  fxLayout="row">
+      <div class="blog-tile"  fxLayout="row" fxLayout.xs="column">
+        <img class="mobile" [src]="bgTwo" style="width: 100%;">
         <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
           <p class="blog-date">DD/MM/YY</p>
           <p class="blog-title">BLOG TITLE Lorem ipsum
@@ -45,12 +51,13 @@
           <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
           <button routerLink="/blog-details/1" class="btn">Load more</button>
         </div>
-        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
+        <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
       </div>
     </div>
 
     <div class="section">
-      <div class="blog-tile"  fxLayout="row">
+      <div class="blog-tile"  fxLayout="row" fxLayout.xs="column">
+        <img class="mobile" [src]="bgThree" style="width: 100%;">
         <div fxFlex="30" class="deatils" fxFlex fxLayout="column" fxLayoutAlign="center start" >
           <p class="blog-date">DD/MM/YY</p>
           <p class="blog-title">BLOG TITLE Lorem ipsum
@@ -58,7 +65,7 @@
           <p class="blog-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac</p>
           <button routerLink="/blog-details/1" class="btn">Load more</button>
         </div>
-        <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
+        <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
       </div>
     </div>
   </div>

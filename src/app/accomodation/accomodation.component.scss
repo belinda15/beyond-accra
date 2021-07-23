@@ -55,6 +55,10 @@
   color: #ffffff;
   font-size: 70px;
   text-align: center;
+
+  @media screen and (max-width: 600px) {
+    font-size: 35px;
+  }
 }
 
 .date-input{
@@ -97,6 +101,10 @@ input:focus{
   font-family: Avenir-Medium, serif;
   color: #ffffff;
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 .suites-container{
@@ -133,6 +141,10 @@ input:focus{
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 3%;
+
+  @media screen and (max-width: 600px) {
+    height: unset;
+  }
 }
 
 
@@ -144,11 +156,23 @@ input:focus{
   margin-left: -15%;
   padding: 3%;
 
+  @media screen and (max-width: 600px) {
+    margin: unset !important;
+    width: 100%;
+    padding: unset;
+    height: unset !important;
+  }
+
   .title{
     font-family: Georgia, serif;
     font-size: 50px;
     color: #000000;
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+      padding-top: 5%;
+      font-size: 35px;
+    }
   }
 
   .optionss{
@@ -156,6 +180,10 @@ input:focus{
     font-size: 20px;
     line-height: 18px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   .more{
@@ -163,6 +191,10 @@ input:focus{
     cursor: pointer;
     font-size: 40px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 
   .price{
@@ -170,6 +202,10 @@ input:focus{
     cursor: pointer;
     font-size: 50px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 25px;
+    }
   }
 
   .night{
@@ -190,6 +226,13 @@ input:focus{
     padding: 3%;
     cursor: pointer;
     margin-top: 1%;
+
+    @media screen and (max-width: 600px) {
+      padding: 2%;
+      font-size: 18px;
+      border: 3px solid #000000;
+      background: #ffffff;
+    }
   }
 
 }
@@ -204,18 +247,35 @@ input:focus{
   z-index: 5 !important;
   position: relative;
 
+  @media screen and (max-width: 600px) {
+    margin: unset;
+    width: 100%;
+    padding: unset;
+    height: unset !important;
+  }
+
   .title{
     font-family: Georgia, serif;
     font-size: 50px;
     color: #000000;
     text-align: center;
+
+    @media screen and (max-width: 600px) {
+      padding-top: 5%;
+      font-size: 35px;
+    }
   }
+
 
   .optionss{
     font-family: Avenir-Medium, serif;
     font-size: 20px;
     line-height: 18px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 
   .more{
@@ -223,6 +283,10 @@ input:focus{
     cursor: pointer;
     font-size: 40px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 
   .price{
@@ -230,6 +294,10 @@ input:focus{
     cursor: pointer;
     font-size: 50px;
     padding-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 25px;
+    }
   }
 
   .night{
@@ -250,6 +318,13 @@ input:focus{
     padding: 3%;
     cursor: pointer;
     margin-top: 1%;
+
+    @media screen and (max-width: 600px) {
+      padding: 2%;
+      font-size: 18px;
+      border: 3px solid #000000;
+      background: #ffffff;
+    }
   }
 
 }
@@ -275,6 +350,14 @@ input:focus{
   display: block;
   padding-top: 20px;
   padding-bottom: 10px;
+
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    border: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
 }
 
 .load-container{
@@ -287,4 +370,10 @@ input:focus{
   height: 50px;
   background-color: #f0f0f0;
   width: 100%;
+}
+
+.remove-section{
+  @media screen and (max-width: 600px) {
+    padding: unset !important;
+  }
 }

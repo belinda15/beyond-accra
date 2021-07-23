@@ -17,6 +17,8 @@ import { NightLifeComponent } from './night-life/night-life.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { ContactComponent } from './contact/contact.component';
+import {HoverContainerComponent} from './home/hover-container.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContactComponent } from './contact/contact.component';
     NightLifeComponent,
     BlogComponent,
     BlogDetailsComponent,
-    ContactComponent
+    ContactComponent,
+    HoverContainerComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

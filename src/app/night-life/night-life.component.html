@@ -1,11 +1,19 @@
 <app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
 <div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
   <div class="night-main" fxLayout="column">
+    <div class="header-mobile" fxLayout="row" >
+      <img src="./assets/images/logo-gold.png" class="header-logo-mobile">
+      <mat-icon  (click)="viewMenuDisplay()" class="header-ic-mobile" svgIcon="menu-alt"></mat-icon>
+    </div>
+    <div class="message-container">
+      <mat-icon class="message-ic" svgIcon="message"></mat-icon>
+    </div>
+
+    <div class="commitment-div">
+      <span>DISCOVER THE NIGHT LIFE</span>
+    </div>
     <div fxLayout="row" class="header">
 
-      <div class="message-container">
-        <mat-icon class="message-ic" svgIcon="message"></mat-icon>
-      </div>
 
       <div class="bottom-brand">
         BEYOND ACCRA
@@ -14,9 +22,6 @@
         </p>
       </div>
 
-      <div class="commitment-div">
-        <span>DISCOVER THE NIGHT LIFE</span>
-      </div>
 
       <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
         <p (click)="viewMenuDisplay()">
@@ -48,7 +53,8 @@
 
   </div>
   <div class="section">
-    <div class="night-tile"  fxLayout="row">
+    <div class="night-tile"  fxLayout="row" fxLayout.xs="column">
+      <img class="mobile" [src]="bgOne" style="width: 100%;">
       <div fxFlex="30" class="deatils" fxLayout="column">
         <span class="number">01</span>
         <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
@@ -58,14 +64,15 @@
           <p class="sub-two">{{textOne}}</p>
         </div>
       </div>
-      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
+      <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgOne + ')'}"></div>
 
 
     </div>
   </div>
   <div class="section">
-    <div class="night-tile"  fxLayout="row">
-      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
+    <div class="night-tile"  fxLayout="row" fxLayout.xs="column">
+      <img class="mobile" [src]="bgTwo" style="width: 100%; margin-bottom: -10%">
+      <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgTwo + ')'}"></div>
       <div fxFlex="30" class="deatils" fxLayout="column">
         <span class="number">02</span>
         <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
@@ -80,7 +87,8 @@
     </div>
   </div>
   <div class="section">
-    <div class="night-tile"  fxLayout="row">
+    <div class="night-tile"  fxLayout="row" fxLayout.xs="column">
+      <img class="mobile" [src]="bgThree" style="width: 100%; margin-bottom: -10%">
       <div fxFlex="30" class="deatils" fxLayout="column">
         <span class="number">03</span>
         <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
@@ -90,7 +98,7 @@
           <p class="sub-two">{{textOne}}</p>
         </div>
       </div>
-      <div fxFlex="70" class="image-settings" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
+      <div fxFlex="70" class="image-settings no-mobile" [ngStyle]="{'background-image': 'url(' + bgThree + ')'}"></div>
 
 
     </div>
@@ -100,7 +108,7 @@
   </div>
 
   <div class="space"></div>
-  <div class="night-sub" fxLayout="row">
+  <div class="night-sub no-mobile" fxLayout="row" >
     <div fxFlex="50" fxLayout="column" class="image-settings book" [ngStyle]="{'background-image': 'url(' + bgFour + ')'}">
       <div fxFlex fxLayout="column" fxLayoutAlign="end start" >
         <p class="text-one">Book a</p>

@@ -1,5 +1,10 @@
 <app-menu [@fadeIn] [@fadeOut] *ngIf="viewMenu" (onClose)="closeMenu($event)"></app-menu>
 <div [@fadeIn] [@fadeOut] *ngIf="!viewMenu">
+
+  <div class="header-mobile mobile" fxLayout="row" >
+    <img src="./assets/images/logo-gold.png" class="header-logo-mobile">
+    <mat-icon  (click)="viewMenuDisplay()" class="header-ic-mobile" svgIcon="menu-alt"></mat-icon>
+  </div>
   <div fxLayout="row" class="header">
     <div fxFlex="45" class="header-left" fxLayout="row" fxLayoutGap="10px">
       <p (click)="viewMenuDisplay()">
@@ -78,7 +83,7 @@
     <p class="related">Related Posts</p>
 
     <div class="blogs-home">
-      <div fxLayout="row">
+      <div fxLayout="row" fxLayout.xs="column">
         <div fxFlex="33" class="blog-sec">
           <img src="./assets/images/blog-thumb-one.png">
           <p class="title">Blog tile</p>

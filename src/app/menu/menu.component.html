@@ -1,5 +1,5 @@
 <div class="menu-screen">
-  <div class="container" fxLayout="row">
+  <div class="container" fxLayout="row" fxLayout.xs="column">
     <div class="tiless borders"  fxFlex="20"  fxLayout="column">
       <span class="numbering">01</span>
       <p class="border-text" fxFlex fxLayoutAlign="center center">ABOUT</p>
@@ -16,26 +16,26 @@
       <span class="numbering">04</span>
       <p class="border-text" routerLink="/blog"   fxFlex fxLayoutAlign="center center">BLOG</p>
     </div>
-    <div class="last-sec tiless"  fxFlex="20"  fxLayout="column">
-      <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" >
+    <div class="last-sec tiless"  fxFlex="20"  fxLayout="column"  fxLayout.xs="row" fxLayoutGap.xs="5px">
+      <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" class="close-div">
         <mat-icon class="close-ic" svgIcon="close" (click)="close()"></mat-icon>
       </div>
 
-      <div class="sub">
+      <div class="sub" fxFlex.xs="25">
         <p class="sub-text" routerLink="/home">HOME</p>
         <p class="sub-text">BOOK NOW</p>
       </div>
 
-      <div class="sub">
+      <div class="sub" fxFlex.xs="25">
         <p class="sub-text">GALLERY</p>
       </div>
 
-      <div class="sub">
+      <div class="sub" fxFlex.xs="25">
         <p class="sub-text" routerLink="/contact">CONTACT</p>
         <p class="sub-text">FAQ</p>
       </div>
 
-      <div class="sub">
+      <div class="sub"  fxFlex.xs="25">
         <p class="sub-text">CREDITS</p>
         <p class="sub-text">PRIVACY POLICY</p>
 
@@ -55,4 +55,9 @@
   </div>
 
 </div>
+
+<div class="close-div-mobile">
+  <mat-icon class="close-ic" svgIcon="close" (click)="close()"></mat-icon>
+</div>
+
 

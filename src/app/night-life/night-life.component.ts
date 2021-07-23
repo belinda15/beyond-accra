@@ -44,6 +44,10 @@ export class NightLifeComponent implements OnInit {
   textOne = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac auctor augue mauris augue. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Ut ';
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+
+    iconRegistry.addSvgIcon(
+      'menu-alt',
+      sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic-alt.svg'));
     iconRegistry.addSvgIcon(
       'menu',
       sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/menu-ic.svg'));

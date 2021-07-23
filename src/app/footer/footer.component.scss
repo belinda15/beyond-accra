@@ -1,27 +1,43 @@
 
 .footer-container{
-  padding-top: 3%;
-  background-color: #ffffff;
+  padding-top: 5%;
+  background-color: #cbbb9f;
   padding-left: 2.5%;
   padding-right: 0.5%;
+  padding-bottom: 2%;
+
 }
 
 .title{
   font-family: Georgia, serif;
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
+  color: #ffffff;
+
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 }
 
 .sub{
   font-family: Avenir-Book, serif;
-  font-size: 25px;
-  color: #24292e;
+  font-size: 16px;
+  color: #535a5f;
   cursor: pointer;
   line-height: 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+    line-height: 15px;
+  }
 }
 
 .address{
   border-left: 1px solid #a4a4a5;
+
+  @media screen and (max-width: 600px) {
+    border-left: none;
+  }
 }
 
 .data-ad{
@@ -29,18 +45,37 @@
   font-size: 20px;
   line-height: 10px;
   color: #24292e;
+
+  @media screen and (max-width: 600px) {
+    font-size: 13px;
+  }
 }
 
 .ic-div{
-  padding-left: 5%;
+
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 5%;
+  }
 }
 
 .copyrights{
-  background-color: #f0f0f0;
-  padding-left: 3%;
+  padding-left: 12%;
   padding-top: 0.8%;
   padding-bottom: 0.8%;
-  color: #000000;
+  color: #ffffff;
   font-family: Avenir-Regular, serif;
-  font-size: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  background-color: #cbbb9f;
+
+  @media screen and (max-width: 600px) {
+    font-size: 13px;
+  }
+}
+
+.logo-footer{
+  width: 80px;
+  margin-bottom: 10px;
 }
