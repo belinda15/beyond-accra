@@ -49,6 +49,9 @@ export class HomeComponent implements OnInit {
   tileTwo = './assets/images/new-tile-two.jpg';
   tileThree = './assets/images/new-tile-three.jpeg';
 
+  blogOne = './assets/images/blog-thumb-one.png';
+  blogTwo = './assets/images/blog-thumb-two.png';
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
 
     iconRegistry.addSvgIcon(

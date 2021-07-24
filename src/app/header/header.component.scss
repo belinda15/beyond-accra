@@ -18,10 +18,15 @@
 
 .header-options{
 
+  .active{
+    border-bottom: 2px solid #ffffff;
+  }
+
   span{
     color: #ffffff;
     font-family: Georgia, serif;
     font-size: 17px;
+    cursor: pointer;
   }
 
   button{

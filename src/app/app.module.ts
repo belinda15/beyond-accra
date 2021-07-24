@@ -19,6 +19,7 @@ import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import { ContactComponent } from './contact/contact.component';
 import {HoverContainerComponent} from './home/hover-container.component';
 import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeaderComponent } from './header/header.component';
     BlogDetailsComponent,
     ContactComponent,
     HoverContainerComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -90,6 +90,34 @@
 
 <div class="new-blog">
   <p class="main-title">Blogs</p>
+  <div class="new-blog-tiles" fxLayout="row" fxLayoutGap="3%">
+    <div fxLayout="column" fxFlex="48" class="tile">
+      <div  fxLayout="column" fxLayoutAlign="end none"  class="tile-image" fxFlex="70" [ngStyle]="{'background-image': 'url(' + blogOne + ')'}">
+        <div class="blog-data">
+          <p class="titles">Blog Title</p>
+          <span class="title">Tuesday, May 22, 2021</span>
+        </div>
+      </div>
+      <div fxFlex="30" class="blog-info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        <p class="more">Read More -</p>
+      </div>
+    </div>
+    <div fxLayout="column" fxFlex="48" class="tile">
+      <div  fxLayout="column" fxLayoutAlign="end none"  class="tile-image" fxFlex="70" [ngStyle]="{'background-image': 'url(' + blogTwo + ')'}">
+        <div class="blog-data">
+          <p class="titles">Blog Title</p>
+          <span class="title">Tuesday, May 22, 2021</span>
+        </div>
+      </div>
+      <div fxFlex="30" class="blog-info">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        <p class="more">Read More -</p>
+      </div>
+    </div>
+  </div>
+  <button class="all-blogs">View All Blogs</button>
+
 </div>
 
 

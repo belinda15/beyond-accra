@@ -6,6 +6,7 @@ import {NightLifeComponent} from './night-life/night-life.component';
 import {BlogComponent} from './blog/blog.component';
 import {BlogDetailsComponent} from './blog-details/blog-details.component';
 import {ContactComponent} from './contact/contact.component';
+import {AboutComponent} from './about/about.component';
 
 const routes: Routes = [
   {path: 'home' , component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'blog' , component: BlogComponent},
   {path: 'contact' , component: ContactComponent},
   {path: 'blog-details/:id' , component: BlogDetailsComponent},
+  {path: 'about' , component: AboutComponent},
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
