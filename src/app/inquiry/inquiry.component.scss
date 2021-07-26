@@ -1,0 +1,83 @@
+.inq{
+  height: 100vh;
+}
+
+.image-section{
+  display: block;
+  background: url('/assets/images/inquiry-img.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.form-sec{
+  padding-top: 8%;
+  padding-left: 15%;
+  padding-right: 3%;
+}
+
+.title{
+  font-family: Georgia, serif;
+  font-size: 40px;
+}
+
+.label{
+  color: #cbbb9f;
+  font-family: Avenir-Medium, serif;
+  font-size: 20px;
+}
+
+input{
+  border: 1px solid #cbbb9f;
+  padding: 5px;
+  height: 30px;
+  color: #000e2f;
+  font-family: Avenir-Regular, serif;
+  width: 70%;
+  font-size: 20px;
+  border-radius: 3px;
+}
+input:focus{
+  outline: none;
+  border: 2px solid #cbbb9f;
+}
+
+textarea{
+  border: 1px solid #cbbb9f;
+  padding: 5px;
+  color: #000e2f;
+  font-family: Avenir-Regular, serif;
+  width: 85%;
+  font-size: 20px;
+  border-radius: 3px;
+}
+textarea:focus{
+  outline: none;
+  border: 2px solid #cbbb9f;
+}
+
+.but{
+  padding: 10px;
+  font-family: Avenir-Medium, serif;
+  background-color: #cbbb9f;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  width: 87%;
+  cursor: pointer;
+  font-size: 23px;
+
+}
+
+.sap{
+  font-family: Georgia, serif;
+  color: #999999;
+  text-align: center;
+  width: 87%;
+  cursor: pointer;
+}
+
+
+.form{margin-top: 5%}

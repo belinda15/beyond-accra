@@ -20,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import {HoverContainerComponent} from './home/hover-container.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { InquiryComponent } from './inquiry/inquiry.component';
+import { HeaderAltComponent } from './header-alt/header-alt.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { AboutComponent } from './about/about.component';
     ContactComponent,
     HoverContainerComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    InquiryComponent,
+    HeaderAltComponent
   ],
   imports: [
     BrowserModule,
